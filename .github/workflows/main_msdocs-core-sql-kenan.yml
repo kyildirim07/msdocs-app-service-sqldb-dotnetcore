@@ -57,7 +57,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'msdocs-core-sql-kenan'
+          app-name: 'msdocs-core-sql-kenan-staging'
           slot-name: 'staging'
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2DB3AE656EC1475980C9F989FC6F173C }}
